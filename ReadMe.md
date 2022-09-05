@@ -91,3 +91,4 @@ public class ReflectBindViewUtil {
 ```
 Annotation Processor使用 [javapoet](https://github.com/square/javapoet)生成Java文件。
 Android整个编译过程就是 source(源代码) -> processor（处理器） -> generate （文件生成）-> javacompiler -> .class 文件 -> .dex(只针对安卓)。
+![Annotation Processor processing过程](https://github.com/caiweihao/SimpleButterKnife/blob/master/icons/processing.png)
