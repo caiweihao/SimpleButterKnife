@@ -1,0 +1,4 @@
+rootProject.name='SimpleButterKnife'
+include ':app'
+include ':lib-annotation'
+include ':lib'
