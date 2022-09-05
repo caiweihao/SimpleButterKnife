@@ -25,8 +25,8 @@ public class ReflectionActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        ReflectBindViewUtil.showMyBindField(this);
+        ReflectBindViewUtil.showMyBindField(this, "Unbind 之前");
         ReflectBindViewUtil.unbind(this);
-        ReflectBindViewUtil.showMyBindField(this);
+        ReflectBindViewUtil.showMyBindField(this, "Unbind 之后");
     }
 }

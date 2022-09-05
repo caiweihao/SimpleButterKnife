@@ -26,7 +26,6 @@ public class ReflectBindViewUtil {
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
-
             }
         }
     }
@@ -46,14 +45,14 @@ public class ReflectBindViewUtil {
         }
     }
 
-    public static void showMyBindField(Activity activity) {
+    public static void showMyBindField(Activity activity, String prefix) {
         Class clazz = activity.getClass();
         Field[] fields = clazz.getDeclaredFields();
         for (Field field : fields) {
             if (field.isAnnotationPresent(ReflectBindView.class)) {
                 field.setAccessible(true);
                 try {
-                    System.out.println("field name is " + field.getName() + " value is " + field.get(activity));
+                    System.out.println(prefix + " field name is " + field.getName() + " value is " + field.get(activity));
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
