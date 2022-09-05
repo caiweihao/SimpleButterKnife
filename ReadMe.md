@@ -14,7 +14,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Retention(RetentionPolicy.RUNTIME) //注解保留范围，SOURCE代表代码级别，CLASS代表编译器级别（Annotation Processor可以使用）， RUNTIME代码VM级别（反射可以使用）
+@Retention(RetentionPolicy.RUNTIME) //注解保留范围，SOURCE代表代码级别（Annotation Processor可以使用），CLASS代表编译器级别 ， RUNTIME代码VM级别（反射可以使用）
 @Target(ElementType.FIELD) //注解使用范围
 public @interface ReflectBindView {
     int value();
