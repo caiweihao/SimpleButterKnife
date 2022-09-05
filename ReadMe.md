@@ -21,7 +21,7 @@ public @interface ReflectBindView {
 }
 ```
    
-因为运行时注解须要在Activity初始化中进行绑定操做，调用了大量反射相关代码，在界面复杂的状况下，使用这种方法就会严重影响Activity初始化效率。而ButterKnife使用了更高效的方式——Annotation Processor来完成这一工做，那么什么是 Annotation Processor呢？
+因为运行时注解须要在Activity初始化中进行绑定操做，调用了大量反射相关代码，在界面复杂的状况下，使用这种方法就会严重影响Activity初始化效率。而ButterKnife使用了更高效的方式——Annotation Processor来完成这一工作，那么什么是Annotation Processor呢？
 ### 反射相关功能
 
 ```java
